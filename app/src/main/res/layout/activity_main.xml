@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bwei.com.yijigouwuche.view.MainActivity">
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/rcv"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <CheckBox
+            android:id="@+id/cb"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="全选"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="140dp"
+            android:text="合计"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="1"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/main_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:background="#ff3660"
+            android:id="@+id/sum"
+            android:text="结算(0)"
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>
